@@ -2,8 +2,8 @@
 struct _fraction
 {
 int num,den;
-};
-typedef _fraction Fraction;
+}
+typedef Fraction;
 int gcd(int a,int b)
 {
   int gcd(int a,int b);
@@ -16,8 +16,17 @@ int gcd(int a,int b)
         }
     return a;
 }
+Fraction input_fraction()
+{
+  Fraction f;
+  printf("Input a fraction\n");
+  scanf("%d%d",&f.num,&f.den);
+  return f;
+}
 int main()
 {
-  printf("%d\n",gcd(16,24));
+  Fraction f;
+  f=input_fraction();
+  printf("The fraction is %d/%d\n",f.num,f.den);
   return 0;
 }
