@@ -3,7 +3,7 @@ struct _fraction
 {
 int num,den;
 };
-typedef struct_fraction,fraction
+typedef _fraction Fraction;
 int gcd(int a,int b)
 {
   int gcd(int a,int b);
